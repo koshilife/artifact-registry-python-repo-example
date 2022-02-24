@@ -1,6 +1,7 @@
 gcloud config set project ${GCP_PROJECT}
-
 app_name="artifact-registry-client-example"
+
+cd client_apps
 
 # ==============================================================
 # App Engine
@@ -15,6 +16,7 @@ gcloud app browse
 # refs: https://cloud.google.com/sdk/gcloud/reference/run/deploy
 
 # deploy
+cp $GOOGLE_APPLICATION_CREDENTIALS cloudrun/key.json
 gcloud run deploy ${app_name} \
   --source "cloudrun" \
   --allow-unauthenticated \

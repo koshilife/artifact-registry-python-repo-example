@@ -1,6 +1,7 @@
 tmp
 .envrc
 venv
+key.json
 
 # Distribution / packaging
 .Python

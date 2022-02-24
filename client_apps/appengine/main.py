@@ -16,8 +16,9 @@
 
 # [START gae_python38_app]
 # [START gae_python3_app]
-from flask import Flask
-
+from flask import Flask, jsonify
+import artifact_example_foo as foo
+import artifact_example_bar as bar
 
 # If `entrypoint` is not defined in app.yaml, App Engine will look for an app
 # called `app` in `main.py`.
@@ -26,8 +27,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello():
-    """Return a friendly HTTP greeting."""
-    return 'Hello World!'
+    return jsonify(dict(result='ok', foo=foo.foo(), foo_version=foo.__version__, bar=bar.bar2(), bar_version=bar.__version__))
 
 
 if __name__ == '__main__':

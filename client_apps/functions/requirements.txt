@@ -1,0 +1,3 @@
+--extra-index-url https://asia-northeast1-python.pkg.dev/<YOUR-GCP-PROJECT>/artifact-example/simple
+artifact-example-foo==0.0.1
+artifact-example-bar
