@@ -4,6 +4,7 @@ venv
 
 # Distribution / packaging
 .Python
+*.pyc
 *.egg-info/
 *.egg
 python_libs/**/build/
