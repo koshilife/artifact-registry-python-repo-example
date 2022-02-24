@@ -1,0 +1,10 @@
+tmp
+.envrc
+venv
+
+# Distribution / packaging
+.Python
+*.egg-info/
+*.egg
+python_libs/**/build/
+python_libs/**/dist/
