@@ -1,0 +1,2 @@
+artifact-example-foo==0.0.1
+artifact-example-bar
